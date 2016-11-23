@@ -1,0 +1,21 @@
+CROSS_HOST="x86_64-w64-mingw32"
+GST_PLUGINS_ENABLE="cdio dvdread mad"
+# libsidplay is permissible but obsolete
+GST_PLUGINS_DISABLE="a52dec amrnb amrwb lame mpeg2dec sidplay twolame x264"
+inherit cross gst-plugins
+
+NAME="mingw64-x86_64-gstreamer1.0-plugins-ugly-free"
+VERSION=1.6.4
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="GStreamer 1.0 Ugly plugins for Win64 toolchain"
+DESCRIPTION="GStreamer Ugly Plug-ins is a set of plug-ins that have good
+quality and correct functionality, but distributing them might pose problems.
+The license on either the plug-ins or the supporting libraries might not be
+how we'd like. The code might be widely known to present patent problems in
+some jurisdictions."
+#md5sum=a278efbaea8a9caa9719a5315c18653b
+#SRC_URI="http://pkgs.fedoraproject.org/repo/pkgs/gstreamer1-plugins-ugly-free/gst-plugins-ugly-free-${VERSION}.tar.xz/${md5sum}/gst-plugins-ugly-free-${VERSION}.tar.xz"
+SRC_URI="gst-plugins-ugly-free-${VERSION}.tar.xz"
+SRC_DIR="gst-plugins-ugly-${VERSION}"
+
