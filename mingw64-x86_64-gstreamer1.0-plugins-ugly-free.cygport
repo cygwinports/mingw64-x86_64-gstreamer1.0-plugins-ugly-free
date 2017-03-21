@@ -1,11 +1,11 @@
 CROSS_HOST="x86_64-w64-mingw32"
-GST_PLUGINS_ENABLE="cdio dvdread mad"
-# libsidplay is permissible but obsolete
-GST_PLUGINS_DISABLE="a52dec amrnb amrwb lame mpeg2dec sidplay twolame x264"
+GST_PLUGINS_ENABLE="a52dec cdio dvdread mpg123"
+# mad, libsidplay are permissible but obsolete
+GST_PLUGINS_DISABLE="amrnb amrwb lame mad mpeg2dec sidplay twolame x264"
 inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer1.0-plugins-ugly-free"
-VERSION=1.6.4
+VERSION=1.10.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Ugly plugins for Win64 toolchain"
