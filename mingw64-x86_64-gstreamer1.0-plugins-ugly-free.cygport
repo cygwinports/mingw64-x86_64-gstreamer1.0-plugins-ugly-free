@@ -5,8 +5,8 @@ GST_PLUGINS_DISABLE="amrnb amrwb mad mpeg2dec sidplay twolame x264"
 inherit cross gst-plugins
 
 NAME="mingw64-x86_64-gstreamer1.0-plugins-ugly-free"
-VERSION=1.10.4
-RELEASE=2
+VERSION=1.10.5
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Ugly plugins for Win64 toolchain"
 DESCRIPTION="GStreamer Ugly Plug-ins is a set of plug-ins that have good
@@ -14,8 +14,7 @@ quality and correct functionality, but distributing them might pose problems.
 The license on either the plug-ins or the supporting libraries might not be
 how we'd like. The code might be widely known to present patent problems in
 some jurisdictions."
-#md5sum=a278efbaea8a9caa9719a5315c18653b
-#SRC_URI="http://pkgs.fedoraproject.org/repo/pkgs/gstreamer1-plugins-ugly-free/gst-plugins-ugly-free-${VERSION}.tar.xz/${md5sum}/gst-plugins-ugly-free-${VERSION}.tar.xz"
-SRC_URI="gst-plugins-ugly-free-${VERSION}.tar.xz"
+sha512sum=fe5d28e39e55c3631cc8b631ab457039b72a84589ca5a4185ec97eb70e6445a6555c8acc97cfd774df0c54076416c9461fd32e230c13da4c449444e6da5a8c28
+SRC_URI="http://pkgs.fedoraproject.org/repo/pkgs/gstreamer1-plugins-ugly-free/gst-plugins-ugly-free-${VERSION}.tar.xz/sha512/${sha512sum}/gst-plugins-ugly-free-${VERSION}.tar.xz"
 SRC_DIR="gst-plugins-ugly-${VERSION}"
 
